@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Suciu Stefan</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/4faf68e3fd.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+	<div class="card">
+		<div class="front"><img src="me2.jpeg" height="500" width="370" class="image"></div>
+		<div class="back">
+			<div class="details">
+				<h2><span class="nume">Suciu Stefan</span><br><span class="location">Junior PHP Developer @</span><br><span>Start Small Solutions</span></h2>
+				<br>
+				<br>
+				<h3 class="white">Past:</h3>
+				<h3>High School<br><span class="location">CNS Zalau - Informatics Intensive</span></h3>
+				<h3>Bachelor's Degree<br><span class="location">UBB Cluj - Computer Science ~ English</span></h3>
+				<h3>Internship<br><span class="location">Yonder Cluj - OutSystems Developer</span>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h3 class="white">Present:</h3>
+				<h3>Master's Degree<br><span class="location">UBB Cluj - Marketing</span></h3>
+			</div>
+		</div>
+	</div>
+
+
+	<p class="line anim-typewriter">Hover me for more info.</p>
+
+
+	<div class="buttons">
+		<div class="wrapper">
+			<div class="button">
+				<div class="icon">
+					<a href="https://www.facebook.com/suciu.sss/" class="a">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<span>Facebook</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="https://twitter.com/suciux" class="a">
+						<i class="fab fa-twitter"></i>
+					</div>
+					<span>Twitter</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="https://www.instagram.com/suciusss/" class="a">
+						<i class="fab fa-instagram"></i>
+					</div>
+					<span>Instagram</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="https://github.com/SuciuS" class="a">
+						<i class="fab fa-github"></i>
+					</div>
+					<span>Github</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="https://www.linkedin.com/in/suciu-stefan-514bb6137/" class="a">
+						<i class="fab fa-linkedin"></i>
+					</div>
+					<span>Linkedin</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="https://www.youtube.com/channel/UCJAhi1Dxpb5miD2ZNFYUp5w?view_as=subscriber" class="a">
+						<i class="fab fa-youtube"></i>
+					</div>
+					<span>YouTube</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="https://soundcloud.com/suciuss" class="a">
+						<i class="fab fa-soundcloud"></i>
+					</div>
+					<span>Soundcloud</span>
+				</a>
+			</div>
+
+			<div class="button">
+				<div class="icon">
+					<a href="mailto:suciusebi96@gmail.com" class="a">
+						<i class="fas fa-envelope-square"></i>
+					</div>
+					<span>Email</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<div class="clock">
+      <div class="display">
+      </div>
+  	</div>
+
+<script>
+      setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+      });
+</script>
+
+
+</body>
+</html>
